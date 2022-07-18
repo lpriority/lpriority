@@ -1,0 +1,44 @@
+html, body {
+  height: 100%;
+}
+
+div.show-image {
+    position: relative;
+}
+div.show-image:hover div{
+    opacity:0.7;
+}
+div.show-image:hover button {
+    display: block;
+}
+div.show-image button {
+    position:absolute;
+    display:none;
+}
+div.show-image button #upload {
+    top:0;
+    left:0;
+}
+div.show-image button #preview  {
+    top:0;
+    left:79%;
+}
+.image-buttons{
+	min-width: 30px;
+	max-width: 30px;
+	height:30px;
+	font-size:12px;
+	margin-top: -3em;
+	background: -webkit-gradient(linear, left top, left bottom, from(#67d0ff), to(#064e79));
+	border:none;
+}
+.tooltip-left:before,
+.tooltip-right:before {
+  top: 0px;
+}
+.tooltip-right:before, .tooltip-right:after{
+left:85%;
+}
+.tooltip-left:before, .tooltip-left:after{
+right:85%;
+}

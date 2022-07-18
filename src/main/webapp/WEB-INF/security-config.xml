@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/security"
+  xmlns:beans="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/security
+           http://www.springframework.org/schema/security/spring-security.xsd">
+	
+	<http pattern="/favicon.ico" security="none" />
+	<http pattern="/resources/**">
+		<form-login login-page="/index.htm" always-use-default-target="true" default-target-url="/loginUser.htm" authentication-failure-url="/loginFail.htm" username-parameter="j_username" password-parameter="j_password" login-processing-url="/j_spring_security_check" />
+		<intercept-url pattern="/resources/**" access="permitAll"></intercept-url>
+		<headers defaults-disabled="true">
+			<header name="Cache-Control" value="public, max-age=500"/>
+		</headers>
+	</http>
+	<http auto-config="true" use-expressions="true" disable-url-rewriting="true" >	
+		<intercept-url pattern="/index.htm" access="permitAll"></intercept-url>
+		<intercept-url pattern="/favicon.ico" access="permitAll" />
+		<intercept-url pattern="/privacyPolicy.htm" access="permitAll" />
+		<intercept-url pattern="/auth2callback.htm" access="hasAnyRole('ROLE_ANONYMOUS')" />
+		<intercept-url pattern="/logout.htm" access="hasAnyRole('ROLE_ANONYMOUS')"></intercept-url>
+		<intercept-url pattern="/forgotPassword.htm" access="hasAnyRole('ROLE_ANONYMOUS')"></intercept-url>
+		<intercept-url pattern="/loginFail.htm" access="hasAnyRole('ROLE_ANONYMOUS')"></intercept-url>
+		<intercept-url pattern="/gmailNotRegistredWithLP.htm" access="hasAnyRole('ROLE_ANONYMOUS')"></intercept-url>
+		<intercept-url pattern="/securityVerification.htm" access="hasAnyRole('ROLE_ANONYMOUS')"></intercept-url>
+		<intercept-url pattern="/privacy.htm" access="hasAnyRole('ROLE_ANONYMOUS')"></intercept-url>
+		<intercept-url pattern="/contactUs.htm" access="permitAll"></intercept-url>
+		<intercept-url pattern="/aboutUs.htm" access="permitAll"></intercept-url>
+		<intercept-url pattern="/studentGuide.htm" access="permitAll"></intercept-url>
+		<intercept-url pattern="/download.htm" access="permitAll"></intercept-url>
+		<intercept-url pattern="/teacherGuide.htm" access="permitAll"></intercept-url>
+		<intercept-url pattern="/readingRegister.htm" access="permitAll"></intercept-url>
+		<intercept-url pattern="/teacherResources.htm" access="permitAll"></intercept-url>
+		<intercept-url pattern="/LPPresentation.htm" access="permitAll"></intercept-url>
+		<intercept-url pattern="/AccessToFluency.htm" access="permitAll"></intercept-url>
+		<intercept-url pattern="/LPFluencySuite.htm" access="permitAll"></intercept-url>
+		<intercept-url pattern="/LearningPriorityGuide.htm" access="permitAll"></intercept-url>
+		<intercept-url pattern="/lpTools.htm" access="permitAll"></intercept-url>
+		<intercept-url pattern="/lpNews.htm" access="permitAll"></intercept-url>
+		<intercept-url pattern="/checkVerification.htm" access="hasAnyRole('ROLE_ANONYMOUS')"></intercept-url>
+		<intercept-url pattern="/adminRegForm1Validate.htm" access="hasAnyRole('ROLE_ANONYMOUS')"></intercept-url>
+		<intercept-url pattern="/firstTimeUserInfo.htm" access="hasAnyRole('ROLE_ANONYMOUS')"></intercept-url>
+		<intercept-url pattern="/FirstTimeUserInfo.htm" access="hasAnyRole('ROLE_ANONYMOUS')"></intercept-url>
+		<intercept-url pattern="/SaveParentDetails.htm" access="hasAnyRole('ROLE_ANONYMOUS','ROLE_ADMIN')"></intercept-url>
+		<intercept-url pattern="/teacherRegVal1.htm" access="hasAnyRole('ROLE_ANONYMOUS','ROLE_ADMIN')"></intercept-url>
+		<intercept-url pattern="/teacherRegVal2.htm" access="hasAnyRole('ROLE_ANONYMOUS','ROLE_ADMIN')"></intercept-url>
+		<intercept-url pattern="/teacherRegVal3.htm" access="hasAnyRole('ROLE_ANONYMOUS','ROLE_ADMIN')"></intercept-url>
+		<intercept-url pattern="/getClasses.htm" access="hasAnyRole('ROLE_ANONYMOUS','ROLE_ADMIN')"></intercept-url>
+		<intercept-url pattern="/teacherRegistration3.htm" access="hasAnyRole('ROLE_ANONYMOUS','ROLE_ADMIN')"></intercept-url>
+		<intercept-url pattern="/registrationSuccess.htm" access="hasAnyRole('ROLE_ANONYMOUS','ROLE_ADMIN','ROLE_USER')"></intercept-url>
+		<intercept-url pattern="/SaveStudentDetails1.htm" access="hasAnyRole('ROLE_ANONYMOUS','ROLE_ADMIN','ROLE_USER')"></intercept-url>		
+		<intercept-url pattern="/SaveStudentDetails1.htm" access="hasAnyRole('ROLE_ANONYMOUS','ROLE_ADMIN','ROLE_USER')"></intercept-url>
+		<intercept-url pattern="/GoStudentRegistration2.htm" access="hasAnyRole('ROLE_ANONYMOUS','ROLE_ADMIN','ROLE_USER')"></intercept-url>
+		<intercept-url pattern="/SaveStudentDetails2.htm" access="hasAnyRole('ROLE_ANONYMOUS','ROLE_ADMIN','ROLE_USER')"></intercept-url>
+		<intercept-url pattern="/GoStudentRegistration3.htm" access="hasAnyRole('ROLE_ANONYMOUS','ROLE_ADMIN','ROLE_USER')"></intercept-url>
+		<intercept-url pattern="/SaveStudentDetails3.htm" access="hasAnyRole('ROLE_ANONYMOUS','ROLE_ADMIN','ROLE_USER')"></intercept-url>
+		
+		<intercept-url pattern="/adminRegForm2Validate.htm" access="hasAnyRole('ROLE_ANONYMOUS')"></intercept-url>
+		<intercept-url pattern="/adminRegForm3Validate.htm" access="hasAnyRole('ROLE_ANONYMOUS')"></intercept-url>
+		<intercept-url pattern="/skip.htm" access="hasAnyRole('ROLE_ANONYMOUS','ROLE_ADMIN','ROLE_USER')"></intercept-url>
+		<intercept-url pattern="/gotoDashboard.htm" access="hasAnyRole('ROLE_USER','ROLE_ADMIN')"></intercept-url>
+		<intercept-url pattern="/invitation.htm" access="hasAnyRole('ROLE_ANONYMOUS','ROLE_ADMIN','ROLE_USER')"></intercept-url>
+		<intercept-url pattern="/inviteOthers.htm" access="hasAnyRole('ROLE_ANONYMOUS','ROLE_ADMIN','ROLE_USER')"></intercept-url>
+			
+			
+		<intercept-url pattern="/Fail.htm" access="hasAnyRole('ROLE_ANONYMOUS','ROLE_ADMIN','ROLE_USER')"></intercept-url>
+		<intercept-url pattern="/AlreadyRegistered.htm" access="hasAnyRole('ROLE_ANONYMOUS')"></intercept-url>
+		<intercept-url pattern="/FailStudentBelow13.htm" access="hasAnyRole('ROLE_ANONYMOUS')"></intercept-url>
+		<intercept-url pattern="/EmailVerification.htm" access="hasAnyRole('ROLE_ANONYMOUS')"></intercept-url>
+		<intercept-url pattern="/checkForgotPassword.htm" access="hasAnyRole('ROLE_ANONYMOUS')"></intercept-url>
+		<intercept-url pattern="/forgotPasswordSuccess.htm" access="hasAnyRole('ROLE_ANONYMOUS')"></intercept-url>
+		<intercept-url pattern="/ForgotPasswordFail.htm" access="hasAnyRole('ROLE_ANONYMOUS')"></intercept-url>
+		<intercept-url pattern="/contactUsSuccess.htm" access="hasAnyRole('ROLE_ANONYMOUS','ROLE_ADMIN','ROLE_USER')"></intercept-url>
+		
+		<custom-filter before="FORM_LOGIN_FILTER" ref="jwtAuthenticationFilter"/> 
+		<intercept-url pattern="/jwtUserAuthentication.htm" access="hasAnyRole('ROLE_ANONYMOUS')" />
+		<intercept-url pattern="/jwtWebAuthentication.htm" access="hasAnyRole('ROLE_ANONYMOUS')" />
+		
+		<intercept-url pattern="/resources/**" access="permitAll"></intercept-url>
+		
+		<intercept-url pattern="/dwr/**" access="permitAll"></intercept-url>
+		<intercept-url pattern="/WEB-INF/**" access="permitAll"></intercept-url> 
+		<intercept-url pattern="/jwtUserAuthentication" access="hasAnyRole('ROLE_ANONYMOUS')" />
+  	
+    	<intercept-url pattern="/images/**" access="permitAll"></intercept-url>
+    	
+		<intercept-url pattern="/**" access="hasRole('ROLE_USER')"></intercept-url>		
+		<intercept-url pattern="/sessionTimeout.htm" access="hasAnyRole('ROLE_ANONYMOUS')"></intercept-url>
+		
+		<form-login login-page="/index.htm" always-use-default-target="true" default-target-url="/loginUser.htm" authentication-failure-url="/loginFail.htm" username-parameter="j_username" password-parameter="j_password" login-processing-url="/j_spring_security_check" />
+		<logout logout-url="/logOut.htm"  invalidate-session="true"  delete-cookies="JSESSIONID"/>
+		<session-management invalid-session-url="/index.htm" />
+		<csrf disabled="true"/>
+		<headers>
+        	 <frame-options disabled="true"></frame-options>
+   		 </headers>
+ 	</http>
+ 	
+ 	<beans:bean id="jwtAuthenticationFilter" class="com.lp.mobile.security.jwt.JwtAuthenticationTokenFilter" /> 
+ 	
+	<authentication-manager alias="authManager">
+     <authentication-provider user-service-ref="customUserDetailsService">
+     	<password-encoder hash="md5" />
+     </authentication-provider>
+   </authentication-manager>   
+</beans:beans>

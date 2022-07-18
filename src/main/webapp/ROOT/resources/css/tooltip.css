@@ -1,0 +1,63 @@
+.ui-tooltip, .arrow:after {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05,#0fc6dc), color-stop(1,#10bed6) );
+    border: 2px solid white;
+  }
+  .ui-tooltip {
+    padding: 10px 20px;
+    color: black;
+    border-radius: 20px;
+    font: 15px Roboto,-apple-system,BlinkMacSystemFont,"Helvetica Neue","Segoe UI","Oxygen","Ubuntu","Cantarell","Open Sans",sans-serif;
+    box-shadow: 0 0 7px black; 
+    white-space: pre-line;
+    font-weight:500;
+  }
+  .arrow {
+    width: 70px;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -35px;
+    bottom: -16px;
+  }
+  .arrow.top {
+    top: -16px;
+    bottom: auto;
+  }
+  .arrow.left {
+    left: 20%;
+  }
+  .arrow:after {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 25px;
+    height: 25px;
+    box-shadow: 6px 5px 9px -9px black;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .arrow.top:after {
+    bottom: -20px;
+    top: auto;
+   }
+ 	.notify-backdrop{
+	background-color: #e6e6e6;
+	}
+	.notify{
+		width:auto;
+		padding:none;
+	}
+	.notify.center{margin-left:-100px;}
+	.notify > button.close{
+	   opacity:1;
+	   color: white;
+	   text-shadow:0 1px 2px rgb(37, 37, 37);
+	}
+	.lnv-mask{
+		background:rgba(119, 229, 242, 0.13);
+	}
+	.ui-widget-header{background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05,#00E3FF), color-stop(1,#03b7cf) );border:1px solid #00d8f5;text-shadow:0 1px 1px rgb(0, 48, 53);margin:-.12em;}
+	.ui-widget-overlay{background:rgba(81, 139, 146, 0.66);}

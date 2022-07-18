@@ -1,0 +1,319 @@
+@media print {
+	 body {-webkit-print-color-adjust: exact; zoom:100%;}
+}
+.circle {
+  padding: 0;
+  list-style: none;
+  position: relative;
+  margin: 30px auto;
+  width: 70%;
+  height: 0;
+  padding-top: 70%;
+  background:#ffffff;
+}
+.circle li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* try this one in Chrome/Opera/Safari */
+  -webkit-clip-path: polygon(50% 50%, 100% 50%, 100% 0, 102% 0%);
+          clip-path: polygon(50% 50%, 100% 50%, 100% 0, 102% 0%);
+}
+
+ @media all and (max-width: 320px) {
+  .circle {
+	width: 46em;
+	height: 46em;
+	padding: 0;
+}
+}
+
+@media all and (min-width: 700px) {
+  .circle {
+	width: 42em;
+	height: 42em;
+	padding: 0;
+}
+}
+.circle3 {
+  -webkit-clip-path: circle(32% at 50% 50%);
+          clip-path: circle(32% at 50% 50%);
+		  
+}
+.circle3 li{
+  clip-path:polygon(50% 50%, 100% 50%, 100% 0, 192% -0.5%);
+}
+.circle3 li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.circle3 li:hover {
+  background-color:#d8e9f1;
+}
+
+.c3_sector1 {
+  background-color: #8ad3e6;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.c3_sector2 {
+  background-color: #8ad3e6;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.c3_sector3 {
+  background-color: #8ad3e6;
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+.c3_sector4 {
+  background-color: #8ad3e6;
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+.c3_sector5 {
+  background-color: #8ad3e6;
+  -webkit-transform: rotate(-80deg);
+          transform: rotate(-80deg);
+}
+
+.c3_sector6 {
+  background-color: #8ad3e6;
+  -webkit-transform: rotate(-100deg);
+          transform: rotate(-100deg);
+}
+
+.c3_sector7 {
+  background-color: #8ad3e6;
+  -webkit-transform: rotate(-120deg);
+          transform: rotate(-120deg);
+}
+
+.c3_sector8 {
+  background-color: #8ad3e6;
+  -webkit-transform: rotate(-140deg);
+          transform: rotate(-140deg);
+}
+
+.c3_sector9 {
+  background-color: #8ad3e6;
+  -webkit-transform: rotate(-160deg);
+          transform: rotate(-160deg);
+}
+
+.c3_sector10 {
+  background-color: #8ad3e6;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.c3_sector11 {
+  background-color: #8ad3e6;
+  -webkit-transform: rotate(-200deg);
+          transform: rotate(-200deg);
+}
+
+.c3_sector12 {
+  background-color: #8ad3e6;
+  -webkit-transform: rotate(-220deg);
+          transform: rotate(-220deg);
+}
+
+.c3_sector13 {
+  background-color: #8ad3e6;
+  -webkit-transform: rotate(-240deg);
+          transform: rotate(-240deg);
+}
+
+.c3_sector14 {
+  background-color: #8ad3e6;
+  -webkit-transform: rotate(-260deg);
+          transform: rotate(-260deg);
+}
+
+.c3_sector15 {
+  background-color: #8ad3e6;
+  -webkit-transform: rotate(-280deg);
+          transform: rotate(-280deg);
+}
+
+.c3_sector16 {
+  background-color: #8ad3e6;
+  -webkit-transform: rotate(-300deg);
+          transform: rotate(-300deg);
+}
+
+.c3_sector17 {
+  background-color: #8ad3e6;
+  -webkit-transform: rotate(-320deg);
+          transform: rotate(-320deg);
+}
+.c3_sector18 {
+  background-color: #8ad3e6;
+  -webkit-transform: rotate(-340deg);
+          transform: rotate(-340deg);
+}
+
+.circle2 {
+  -webkit-clip-path: circle(19% at 50% 50%);
+          clip-path: circle(19% at 50% 50%);
+}
+.circle2 li{
+   clip-path: polygon(50% 50%, 100% 50%, 0% 0, 80% -0.5%);
+}
+.circle2 li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.circle2 li:hover {
+  background-color:#d8e9f1;
+}
+.c2_sector1 {
+  background-color: #97daec;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.c2_sector2 {
+  background-color: #97daec;
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+.c2_sector3 {
+  background-color: #97daec;
+  -webkit-transform: rotate(-120deg);
+          transform: rotate(-120deg);
+}
+
+.c2_sector4 {
+  background-color: #97daec;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.c2_sector5 {
+  background-color: #97daec;
+  -webkit-transform: rotate(-240deg);
+          transform: rotate(-240deg);
+}
+
+.c2_sector6 {
+  background-color: #97daec;
+  -webkit-transform: rotate(-300deg);
+          transform: rotate(-300deg);
+}
+
+.circle1 {
+  -webkit-clip-path: circle(9% at 50% 50%);
+          clip-path: circle(9% at 50% 50%);
+		  
+}
+.circle1 li{
+  clip-path:polygon(50% 50%, 100% 50%, 100% 0, 25% 4%);
+}
+.circle1 li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.circle1 li:hover {
+  background-color:#d8e9f1;
+}
+
+.c1_sector1 {
+   background-color: #a9e0ef;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.c1_sector2 {
+  background-color: #a9e0ef;
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+}
+
+.c1_sector3 {
+  background-color: #a9e0ef;
+  -webkit-transform: rotate(240deg);
+          transform: rotate(240deg);
+}
+
+.c1_text {
+  position: absolute;
+  right: 22%;
+  -webkit-transform: rotate(25deg);
+          transform: rotate(25deg);
+  color: #0c495a;
+  font-family: cursive;
+  font-size: 14px;
+  margin:23.5em 12.5em;
+  font-weight:bold;
+}
+
+.c2_text {
+  position: absolute;
+  right: 22%;
+  -webkit-transform: rotate(58deg);
+          transform: rotate(58deg);
+  color: #0c495a;
+  font-family: cursive;
+  font-size: 13px;
+  margin:23.5em 8em;
+  font-weight:bold;
+}
+
+.c3_text {
+  position: absolute;
+  right: 2%;
+  -webkit-transform: rotate(80deg);
+          transform: rotate(80deg);
+  color: #0c495a;
+  font-family: cursive;
+  font-size: 13px;
+  margin:25.2em 12em;
+  font-weight:bold;
+}
+
+@-webkit-keyframes slow {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(720deg);
+    }
+}
+
+@-webkit-keyframes medium {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(1440deg);
+    }
+}
+@-webkit-keyframes fast {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(3960deg);
+    }
+}
+@-webkit-keyframes stop {
+    -webkit-transform: rotate(0deg);
+}
+
+.circle3 {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}

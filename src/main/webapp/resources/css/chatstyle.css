@@ -1,0 +1,57 @@
+/* CSS Document */
+  
+#submitmsg { font:12px arial; }
+  
+#exit {
+    color:#0000FF;
+    text-decoration:none; }
+  
+    a:hover { text-decoration:underline; }
+  
+#wrapper, #loginform {
+    margin:0 auto;
+    padding-bottom:25px;
+    background:#EBF4FB;
+    width:700px;
+    border:1px solid #ACD8F0; }
+  
+#loginform { padding-top:18px; }
+  
+    #loginform p { margin: 5px; }
+  
+#chatbox {
+    text-align:left;
+    margin-left:220px;
+    margin-bottom:5px;
+    padding:10px;
+    background:#fff;
+    height:270px;
+    width:440px;
+    border:1px solid #ACD8F0;
+    overflow:auto; }
+#onlineusers {
+	text-align:left;
+	float:left;
+	margin-left:25px;
+	background:#fff;
+	height:350px;
+	width:180px;
+	border:1px solid #ACD8F0;
+	overflow:auto;
+}  
+#usermsg {
+    width:395px;
+    border:1px solid #ACD8F0; }  
+
+  
+#chatMenu { padding:12.5px 25px 12.5px 25px; }
+  
+.welcome { 
+	float:left;
+	margin:0;
+    padding:0; 
+}
+  
+.logout { float:right; }
+  
+.msgln { margin:0 0 2px 0; }

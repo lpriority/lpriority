@@ -1,0 +1,66 @@
+package com.lp.common.dao;
+
+import java.sql.SQLDataException;
+import java.util.List;
+
+import com.lp.custom.exception.DataException;
+import com.lp.model.Assignment;
+import com.lp.model.AssignmentQuestions;
+import com.lp.model.AssignmentType;
+import com.lp.model.JacQuestionFile;
+import com.lp.model.JacTemplate;
+import com.lp.model.Lesson;
+import com.lp.model.PtaskFiles;
+import com.lp.model.Questions;
+import com.lp.model.QuestionsList;
+import com.lp.model.RubricScalings;
+import com.lp.model.RubricTypes;
+import com.lp.model.Student;
+import com.lp.model.StudentAssignmentStatus;
+import com.lp.model.SubQuestions;
+
+public interface AssessmentDAO {
+	public List<AssignmentType> getAssignmentsByassignFor(String assignFor) throws DataException;
+	public boolean  createAssessments( List <Questions> questions) throws DataException;
+	public Lesson getLessonById(long lessonId) throws DataException;
+	public AssignmentType getassignmentTypeById(long assessmentTypeId) throws DataException;
+	public AssignmentType getAssignmentTypeByAssignmentType(String assignmentType) throws DataException;
+	public JacQuestionFile saveJacQuestioFile(JacQuestionFile jacQuesFile)	throws SQLDataException;
+	public void saveBulkJacTemplates(List<JacTemplate> jacTemplates) throws SQLDataException;
+	public SubQuestions saveSubQuestion(SubQuestions subQuestion) throws SQLDataException;
+	public SubQuestions saveAssignemntQuestions(SubQuestions subQuestion) throws SQLDataException;
+	public List<RubricTypes> getRubricTypes() throws SQLDataException;
+	public List<RubricScalings> getRubricScalings() throws SQLDataException;
+	public QuestionsList getQuestionByQuestionId(long questionId) throws SQLDataException;
+	public List<Questions> getQuestionsByAssignmentType(long assignmentTypeId,long lessonId, String usedFor) throws SQLDataException;
+	public boolean updateAssessments(Questions question) throws SQLDataException;
+	public boolean removeAssessments(Questions question) throws SQLDataException;
+	public List<SubQuestions> getSubQuestionByAssignmentType(long assignmentTypeId,long lessonId, String usedFor,long gradeId) throws SQLDataException;
+	public boolean deletePerformancefile(long fileId) throws SQLDataException;
+	public List<PtaskFiles> getPtaskFilesByUser(long questionId) throws SQLDataException;
+	public List<JacQuestionFile> getJacFileQuestionsByUsedFor(long lessonId,String usedFor) throws SQLDataException;
+	public List<JacQuestionFile> getJacFileQuestionsByLessonId(long lessonId) throws SQLDataException;
+	public JacTemplate getJacTemplate(long jacQuestionId) throws SQLDataException;
+	public List<JacTemplate> getJacTemplateByFileId(long jacQuestionFileId) throws SQLDataException;
+	public List<Assignment> getTestDatesforRTIResults(long createdBy,long csId,String usedFor) throws SQLDataException;
+	public List<StudentAssignmentStatus> getRTIResultsByStudent(long assignmentId) throws SQLDataException;
+	public List<AssignmentQuestions> getRTIResultsByQuestion(long assignmentId) throws SQLDataException;
+	public JacQuestionFile getJacQuestionFileByFileId(long jacQuestionFileId) throws SQLDataException;
+	public boolean deleteJacTemplete(JacTemplate jacTemplate) throws SQLDataException;
+	public boolean deleteQuestion(Questions question) throws SQLDataException;
+	public Questions saveQuestion(Questions question) throws SQLDataException;
+	public boolean saveJacTemplate(JacTemplate jacTemplate) throws SQLDataException;
+	public boolean deleteJacTempleteQuestion(long jacQuestionFileId) throws SQLDataException;
+	public List<Questions> getQuestionsByLessonId(long lessonId) throws SQLDataException;
+	public SubQuestions getSubQuestionBySubQuestionId(long subQuestionId) throws SQLDataException;
+	public boolean deleteSentenceStructure(long subQuestionId) throws SQLDataException;
+	public boolean checkQuestionExists(long questionId);
+	public boolean checkJacTemplateExists(long jacQuestionFileId);
+	public long checkQuestionAssigned(long questionId);
+	public boolean updateSubQuestion(Assignment assignment, List<Student> studentList,List<Questions> questionsLt);
+	public boolean checkSubQuestionExists(long questionId)throws SQLDataException;
+	public List<Questions> getQuestionsByAssignmentType(long assignmentTypeId,String usedFor,long gradeId) throws SQLDataException;
+	public List<AssignmentQuestions> getAssignmentByquestionId(long questionId) throws DataException;
+	public List<AssignmentQuestions> getAssignmentBySubQuestionId(long questionId) throws DataException;
+	public boolean updateStudentAssignmentQusetions(Questions question,List<AssignmentQuestions> studentAssignmentQuestions,List<StudentAssignmentStatus> testObjects) throws SQLDataException;
+}

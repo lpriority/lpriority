@@ -1,0 +1,15 @@
+# Place for any comments here
+# 11/26/2015
+# Created robots file by bayLogic Technologies
+# Please update following folders if you add or delete any folders.
+
+
+User-Agent: *
+Disallow: /WEB-INF
+Disallow: /META-INF
+Disallow: /resources
+Disallow: /images
+
+Sitemap: http://www.learningpriority.com/sitemap.xml
+
+

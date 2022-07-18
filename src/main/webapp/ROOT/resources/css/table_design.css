@@ -1,0 +1,41 @@
+
+        table.demo
+        {
+            font-size: 18px;
+            border: 1px solid black;
+            height:100%;
+        }
+
+        table.demo th
+        {
+            font-weight: bold;
+            background-color: #C7DC00;
+            padding: 2px 5px 2px 5px;
+            font-size: 16px;
+        }
+
+        table.demo td
+        {
+            font-size: 16px;
+            padding: 2px 5px 2px 5px;
+            text-align: center;
+            height:1.5em;
+            background: white;
+            /*	border-top: 1px dotted #C0C0FF;*/
+        }
+
+        tr.row1
+        {
+            background-color: #FFFFFF;
+        }
+
+        tr.row2
+        {
+            background-color: #E0E0FF;
+        }
+
+        tr.hl
+        {
+            color: #808080;
+            font-weight: bold;
+        }

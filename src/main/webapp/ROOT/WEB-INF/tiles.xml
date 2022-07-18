@@ -1,0 +1,39 @@
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+  <!-- Base Definition -->
+	   <definition name="base-definition" template="/jsp/layout.jsp"> 
+	   		<put-attribute name="header" value="" /> 
+	        <put-attribute name="body" value="" />
+	        <put-attribute name="footer" value="/jsp/CommonJsp/common_footer.jsp" />
+	   </definition> 
+    <!-- Base Definition -->
+    
+     <!-- Login pages -->
+	    <definition name="login/*" extends="base-definition">
+	    	<put-attribute name="header" value="/jsp/CommonJsp/common_header.jsp" /> 
+	        <put-attribute name="body" value="/jsp/login/{1}.jsp" />
+	    </definition>
+     <!-- Login pages -->
+     
+     <!-- Non-Login pages -->
+	     <definition name="*/*" extends="base-definition">
+	      	<put-attribute name="header" value="/jsp/CommonJsp/common_header.jsp" /> 
+	        <put-attribute name="body" value="/jsp/{1}/{2}.jsp" />
+	    </definition>
+    <!-- Non-Login pages -->
+    
+    <!-- Ajax Call -->
+	    <definition name="Ajax/*/*" template="/jsp/ajax_layout.jsp">
+	        <put-attribute name="body" value="/jsp/{1}/{2}.jsp" />
+	    </definition>
+     <!-- Ajax Call  -->
+     
+     <!-- Ajax Call for optimized pages -->
+	    <definition name="Ajax2/*/*" template="/jsp/ajax_layout2.jsp">
+	        <put-attribute name="body" value="/jsp/{1}/{2}.jsp" />
+	    </definition>
+     <!-- Ajax Call  -->
+    
+ </tiles-definitions>

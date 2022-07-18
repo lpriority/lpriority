@@ -1,0 +1,85 @@
+
+.btn-w3r {
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #cb60b3; /* Old browsers */
+    background: -moz-linear-gradient(top,  #cb60b3 0%, #ad1283 50%, #de47ac 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#cb60b3), color-stop(50%,#ad1283), color-stop(100%,#de47ac)); /   *   Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#de47ac',GradientType=0 ); /* IE6-9 */
+    color:#fff;
+    outline:none;
+    }
+    .btn-w3r:hover {
+    background: #333; /* Old browsers */
+    color:#e75616;
+    }
+    
+    
+.btn-circle.btn-xl:hover {  
+    background: #3BB9FF;   
+    color:#e75616;  
+    }  
+.btn-circle {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  background-color:#82CAFA;
+  outline:none;
+}
+.btn-circle.btn-xl {
+  width: 100px;
+  height: 100px;
+  padding: 10px 16px;
+  font-size: 24px;
+  line-height: 1.33;
+  border-radius: 35px;
+  outline:none;
+}
+.btn-goal {
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 2.428571429;
+  background-color:#82CAFA;
+  outline:none;
+}
+.btn-goal.btn-xll {
+  width: 150px;
+  height: 150px;
+  padding: 10px 16px;
+  font-size: 16px;
+  line-height: 1.33;
+  border-radius: 35px;
+  outline:none;
+}
+.btn-caaspp {
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.428571429;
+  background-color:#82CAFA;
+  outline:none;
+}
+.btn-caaspp.btn-xl {
+  width: 700px;
+  height: 50px;
+  padding: 10px 16px;
+  font-size: 16px;
+  line-height: 1.33;
+  border-radius: 15px;
+  outline:none;
+}

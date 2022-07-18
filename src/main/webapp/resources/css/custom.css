@@ -1,0 +1,98 @@
+.dboard .buttonSelect.leftPill, .mdboard .buttonSelect.leftPill, .ldboard .buttonSelect.leftPill {
+	-moz-border-radius-topleft: 15px;
+	-webkit-border-top-left-radius: 15px;
+	border-top-left-radius: 15px;
+}
+.dboard .button.leftPill, .mdboard .button.leftPill, .ldboard .button.leftPill {
+	-moz-border-radius-topleft: 15px;
+	-webkit-border-top-left-radius: 15px;
+	border-top-left-radius: 15px;
+}
+.dboard .tooLongTitle, .mdboard .tooLongTitle, .ldboard .tooLongTitle {
+	font-size: 12px;
+	height: 28px;
+	line-height: 11px;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+	padding-top: 0.8em;
+	padding-bottom: 1.6em;
+}
+.dboard .button.rightPill, .mdboard .button.rightPill, .ldboard .button.rightPill {
+	-moz-border-radius-topright: 15px;
+	-webkit-border-top-right-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.dboard .buttonSelect.rightPill, .mdboard .buttonSelect.rightPill, .ldboard .buttonSelect.rightPill {
+-moz-border-radius-topright: 15px;
+	-webkit-border-top-right-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.dboard .title-border, .mdboard .title-border, .ldboard .title-border {
+	margin-top:5px;
+	top: 0px;
+	height: 35px;
+	margin-bottom: 15px;
+}
+.dboard #title, .mdboard #title, .ldboard #title {
+	text-align: left;
+	padding-top: 5px;
+}
+.dboard .loader, .mdboard .loader, .ldboard .loader {
+	top: 55%;
+}
+.dboard #loading-div, .mdboard #loading-div, .ldboard #loading-div {
+	left: 54%;
+	margin-top: -4.4em;
+}
+
+.dboard emptyspace, .mdboard emptyspace, .ldboard emptyspace { height: 25px; }
+
+.dboard .h4, .h5, .h6, h4, h5, h6 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.ldboard .h4, .h5, .h6, h4, h5, h6 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.mdboard .h4, .h5, .h6, h4, h5, h6 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.dboard .imgicon i, .mdboard .imgicon i, .ldboard .imgicon i {
+	padding: 0px;
+	margin:0px;	
+	font-size: 30px;	
+}
+
+.dboard .pnlhead, .mdboard .pnlhead, .ldboard .pnlhead  { padding-top:5px; font-size: 16px; font-weight:bold;margin-bottom: -2px;}
+
+.dboard .pnlsubhead, .mdboard .pnlsubhead, .ldboard .pnlsubhead { padding-top:-1px; font-size: 13px; }
+
+.mdboard .tooLongTitle {    
+    height: 38px;
+	line-height: 13px;
+    padding-top: 0.4em;
+    padding-bottom: 1.2em;
+}
+.mdboard .sline a { padding-top: 12px; }
+
+.ldboard .tooLongTitle {    
+    height: 55px;
+	line-height: 15px;
+    padding-top: 0.4em;
+    padding-bottom: 1.2em;
+}
+
+.ldboard .dline a { padding-top: 10px; }
+
+.ldboard .sline a { padding-top: 17px; }
+
+.shead { padding-top: 2px; padding-bottom: 2px; font-weight: 600 !important; font-size: 13px; }
+.subhead { padding: 10px 0px; font-weight:bold;}
+.topleft { right:0;left: unset;}
